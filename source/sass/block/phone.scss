@@ -1,0 +1,43 @@
+.phone {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  text-align: end;
+
+  &:focus:not(.main-nav__link--disadled) {
+    color: #2d383f;
+  }
+
+  &:hover:not(.main-nav__link--disadled) {
+    opacity: 0.5;
+  }
+
+  &:active:not(.main-nav__link--disadled) {
+    color: #1c3374;
+  }
+
+  &--disadled {
+    color: #999999;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .phone {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: auto;
+  }
+}

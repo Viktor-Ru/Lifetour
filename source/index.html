@@ -16,13 +16,59 @@
 </head>
 
 <body class="page-body">
+  <header class="header" data-test="header">
+    <div class="container header__wrapper">
 
+      <button class="header__nav-toggle" type="button">
+        <span class="visually-hidden header__nav-toggle-description">открыть меню.</span>
+      </button>
+
+      <div class="header__nav-wrapper">
+        <a class="logo" href="#">
+          <img class="logo__img" src="img//logotype-white.svg" width="142" height="42" alt="Логотип Lifetour.">
+        </a>
+
+        <nav class="main-nav">
+          <!-- TODO: Вставить якоря -->
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Туры</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Обучение</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="phone" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <!-- <section class="hero" data-test="hero">
+
+    </section> -->
+  </main>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
 
 
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
   <svg>
     <use href="/__spritemap#sprite-user"></use>
   </svg>
@@ -37,5 +83,4 @@
   <div data-test="adv">adv</div>
   <div data-test="gallery">gallery</div>
   <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
-  <script type="module" src="js/main.js"></script> -->
+  <div data-test="footer">footer</div> -->
