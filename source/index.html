@@ -18,16 +18,13 @@
 <body class="page-body">
   <header class="header" data-test="header">
     <div class="container header__wrapper">
-
       <button class="header__nav-toggle" type="button">
         <span class="visually-hidden header__nav-toggle-description">открыть меню.</span>
       </button>
-
       <div class="header__nav-wrapper">
         <a class="logo" href="#">
           <img class="logo__img" src="img//logotype-white.svg" width="142" height="42" alt="Логотип Lifetour.">
         </a>
-
         <nav class="main-nav">
           <!-- TODO: Вставить якоря -->
           <ul class="main-nav__list">
@@ -51,16 +48,80 @@
             </li>
           </ul>
         </nav>
-
         <a class="phone" href="tel:+78000000000">8 800 000-00-00</a>
       </div>
-
     </div>
   </header>
   <main>
-    <!-- <section class="hero" data-test="hero">
+    <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
+    <section class="hero" data-test="hero">
 
-    </section> -->
+      <div class="hero__swiper swiper">
+        <ul class="hero__list swiper-wrapper">
+          <li class="hero__slide hero__slide--slide-1 swiper-slide">
+            <div class="container">
+              <div class="hero__content-wrapper">
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>
+                  В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
+                  горы Чегет.
+                </p>
+              </div>
+              <a class="hero__link" href="#">Смотреть тур</a>
+              <ul class="hero__info-list">
+                <li class="hero__info-item">
+                  <p class="hero__info-text hero__info-text--duration">6 дней/5 ночей</p>
+                </li>
+                <li class="hero__info-item">
+                  <p class="hero__info-text hero__info-text--complexity">Высокая сложность</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="hero__slide hero__slide--slide-2 swiper-slide">
+            <div class="container">
+              <div class="hero__content-wrapper">
+                <h2>Невероятная природа Камчатки</h2>
+                <p>
+                  Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                  уголков дикой природы в мире.
+                </p>
+              </div>
+              <a class="hero__link" href="#">Смотреть тур</a>
+              <ul class="hero__info-list">
+                <li class="hero__info-item">
+                  <p class="hero__info-text hero__info-text--duration">9 дней/10 ночей</p>
+                </li>
+                <li class="hero__info-item">
+                  <p class="hero__info-text hero__info-text--complexity">Средняя сложность</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="hero__slide hero__slide--slide-3 swiper-slide">
+            <div class="container">
+              <div class="hero__content-wrapper">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>
+                  Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
+                  дух ландшафтов Алтайских гор.
+                </p>
+              </div>
+              <a class="hero__link" href="#">Смотреть тур</a>
+              <ul class="hero__info-list">
+                <li class="hero__info-item">
+                  <p class="hero__info-text hero__info-text--duration">8 дней/7 ночей</p>
+                </li>
+                <li class="hero__info-item">
+                  <p class="hero__info-text hero__info-text--complexity">Лёгкая сложность</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
   </main>
   <script type="module" src="js/main.js"></script>
 </body>

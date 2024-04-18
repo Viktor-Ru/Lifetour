@@ -13,10 +13,7 @@
 
 .header__nav-toggle {
   width: 26px;
-
-  // height: 26px;
   height: 28px;
-
   border: none;
   background-color: transparent;
   background-image: url("../img/menu-open.svg");
@@ -55,7 +52,7 @@
 @media (min-width: $desktop-width) {
   .header {
     padding-top: 42px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
   }
 
   .header__wrapper {
