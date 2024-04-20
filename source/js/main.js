@@ -1,6 +1,7 @@
-import { initMainMenu } from './menu';
-import { initHeroSlider } from './hero-slider';
+import { initMainMenu } from './menu.js';
+import { initHeroSlider, initToursSlider } from './sliders.js';
 
 
 initMainMenu();
 initHeroSlider();
+initToursSlider();

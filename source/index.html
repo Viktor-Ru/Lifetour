@@ -7,10 +7,17 @@
   <title>Lifetour</title>
   <link rel="stylesheet" href="sass/style.scss">
 
+  <link rel="preload" href="fonts/montserrat-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="preload" href="fonts/montserrat-light.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semibold.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-extrabold.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
@@ -22,7 +29,7 @@
         <span class="visually-hidden header__nav-toggle-description">открыть меню.</span>
       </button>
       <div class="header__nav-wrapper">
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <img class="logo__img" src="img//logotype-white.svg" width="142" height="42" alt="Логотип Lifetour.">
         </a>
         <nav class="main-nav">
@@ -55,7 +62,6 @@
   <main>
     <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
     <section class="hero" data-test="hero">
-
       <div class="hero__swiper swiper">
         <ul class="hero__list swiper-wrapper">
           <li class="hero__slide hero__slide--slide-1 swiper-slide">
@@ -81,7 +87,7 @@
           <li class="hero__slide hero__slide--slide-2 swiper-slide">
             <div class="container">
               <div class="hero__content-wrapper">
-                <h2>Невероятная природа Камчатки</h2>
+                <h2>Невероятная<br>природа Камчатки</h2>
                 <p>
                   Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
                   уголков дикой природы в мире.
@@ -119,8 +125,140 @@
             </div>
           </li>
         </ul>
-        <div class="swiper-pagination"></div>
+        <div class="hero__swiper-pagination swiper-pagination"></div>
       </div>
+    </section>
+    <section class="tours container" data-test="tours">
+
+      <h2 class="title">Ближайшие туры<span class="title__hadow" aria-hidden="true">Ближайшие туры</span></h2>
+
+
+      <div class="tours__swiper swiper">
+
+        <div class="tours__nav-wrapper">
+          <div class="tours__button tours__button--prev swiper-button-prev"></div>
+          <div class="tours__button tours__button--next swiper-button-next"></div>
+        </div>
+
+        <ul class="tours__slider swiper-wrapper">
+          <!-- 1 -->
+          <li class="tours__slide tours__slide--slide-1 swiper-slide">
+            <div class="tours__slide-wrapper">
+              <p class="tours__slider-info">
+                <span class="tours__slider-mane">Кавказ</span>
+                <span>
+                  <span class="tours__slider-day">4 дня</span>
+                  <span class="tours__slider-night">3 ночи</span>
+                </span>
+              </p>
+              <h2 class="tours__slider-title">Путешествие<br>вокруг Эльбруса</h2>
+              <div class="tours__slider-text-wrapper">
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description tours__slider-description--complexity">Сложность:</span>
+                  <span class="visually-hidden">4 звезды из 5</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Даты набора:</span>
+                  <span class="tours__slider-value">12.06–19.06</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Группа:</span>
+                  <span class="tours__slider-value">до 15 чел.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2 -->
+          <li class="tours__slide tours__slide--slide-2 swiper-slide">
+            <div class="tours__slide-wrapper">
+
+              <p class="tours__slider-info">
+                <span class="tours__slider-mane">Алтай</span>
+                <span>
+                  <span class="tours__slider-day">14 дней</span>
+                  <span class="tours__slider-night">13 ночей</span>
+                </span>
+              </p>
+
+              <h2 class="tours__slider-title">Путь к подножию<br>Белухи</h2>
+              <div class="tours__slider-text-wrapper">
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description tours__slider-description--complexity">Сложность:</span>
+                  <span class="visually-hidden">4 звезды из 5</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Даты набора:</span>
+                  <span class="tours__slider-value">14.06–23.06</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Группа</span>
+                  <span class="tours__slider-value">до 25 чел.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <!-- 3 -->
+          <li class="tours__slide tours__slide--slide-3 swiper-slide">
+            <div class="tours__slide-wrapper">
+              <p class="tours__slider-info">
+                <span class="tours__slider-mane">Адыгея</span>
+                <span>
+                  <span class="tours__slider-day">7 дней</span>
+                  <span class="tours__slider-night">6 ночей</span>
+                </span>
+              </p>
+              <h2 class="tours__slider-title">Через Фишт<br>к Чёрному морю<br>и обратно</h2>
+              <div class="tours__slider-text-wrapper">
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description tours__slider-description--complexity">Сложность:</span>
+                  <span class="visually-hidden">4 звезды из 5</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Даты набора:</span>
+                  <span class="tours__slider-value">15.07–19.07</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Группа:</span>
+                  <span class="tours__slider-value">до 22 чел.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <!-- 4 -->
+          <li class="tours__slide tours__slide--slide-4 swiper-slide">
+            <div class="tours__slide-wrapper">
+              <p class="tours__slider-info">
+                <span class="tours__slider-mane">Урал</span>
+                <span>
+                  <span class="tours__slider-day">9 дней</span>
+                  <span class="tours__slider-night">10 ночей</span>
+                </span>
+              </p>
+              <h2 class="tours__slider-title">Восхождение Манарага</h2>
+              <div class="tours__slider-text-wrapper">
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description tours__slider-description--complexity">Сложность:</span>
+                  <span class="visually-hidden">5 звезд из 5</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Даты набора:</span>
+                  <span class="tours__slider-value">12.07–19.07</span>
+                </p>
+                <p class="tours__slider-text">
+                  <span class="tours__slider-description">Группа:</span>
+                  <span class="tours__slider-value">до 7 чел.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <a class="tours__link" href="#">Показать все туры</a>
     </section>
   </main>
   <script type="module" src="js/main.js"></script>
