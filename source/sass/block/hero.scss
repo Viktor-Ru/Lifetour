@@ -116,6 +116,7 @@
   .hero__slide {
     padding-top: 296px;
     min-height: 1034px;
+    margin-left: -2px; // BUG: -2
 
     &--slide-1 {
       background-image: url("../img/background/hero-tablet-1.jpg");
@@ -148,6 +149,10 @@
     margin: 10px auto;
   }
 
+  .hero__link {
+    width: 180px;
+  }
+
   .hero__pagination-btn {
     width: 20px;
     height: 20px;
@@ -156,7 +161,7 @@
 
 @media (min-width: $desktop-width) {
   .hero__slide {
-    padding-top: 136px;
+    padding-top: 137px;
     min-height: 800px;
 
     &--slide-1 {
@@ -174,7 +179,7 @@
 
   .hero__content-wrapper {
     text-align: start;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   .hero__content-wrapper h2 {

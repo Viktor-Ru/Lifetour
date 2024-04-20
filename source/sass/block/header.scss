@@ -34,7 +34,7 @@
 
   .header__nav-toggle {
     margin-top: 8px;
-    margin-left: -2px;
+    margin-left: -2px;  // BUG: -2
   }
 
   .header__wrapper {
