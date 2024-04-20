@@ -34,6 +34,7 @@
 
   .header__nav-toggle {
     margin-top: 8px;
+    margin-left: -2px;
   }
 
   .header__wrapper {
@@ -44,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 410px;
+    width: 412px;
     margin-left: auto;
   }
 }
@@ -52,7 +53,7 @@
 @media (min-width: $desktop-width) {
   .header {
     padding-top: 42px;
-    padding-bottom: 26px;
+    padding-bottom: 42px;
   }
 
   .header__wrapper {
@@ -60,7 +61,7 @@
   }
 
   .header__nav-wrapper {
-    margin-left: 32px;
+    margin-left: 31px;
     width: auto;
   }
 

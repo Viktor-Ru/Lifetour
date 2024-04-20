@@ -6,8 +6,21 @@
   margin-bottom: 16px;
 }
 
+.logo__img {
+  display: block;
+  width: 142px;
+  height: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 43px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .logo {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
