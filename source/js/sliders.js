@@ -2,7 +2,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function initHeroSlider() {
@@ -32,9 +31,9 @@ function initToursSlider() {
     modules: [Navigation],
 
     navigation: {
-      prevEl: '.tours__button--prev',
-      nextEl: '.tours__button--next',
-      disabledClass: 'tours__button--disadled',
+      prevEl: '.tours__button-prev',
+      nextEl: '.tours__button-next',
+      disabledClass: 'nav-button--disadled',
     },
 
     breakpoints: {
@@ -50,4 +49,32 @@ function initToursSlider() {
   });
 }
 
-export { initHeroSlider, initToursSlider };
+function initTrainingSlider() {
+  const trainingSwiper = new Swiper('.training__swiper', {
+    speed: 400,
+    spaceBetween: 10,
+    loop: false,
+    autoHeight: true,
+    slidesPerView: 1,
+    modules: [Navigation],
+
+    navigation: {
+      prevEl: '.training__button-prev',
+      nextEl: '.training__button-next',
+      disabledClass: 'nav-button--disadled',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    }
+  });
+}
+
+export { initHeroSlider, initToursSlider, initTrainingSlider };

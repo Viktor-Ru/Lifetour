@@ -1,0 +1,12 @@
+.nav-button {
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  width: 37px;
+  height: 35px;
+  background-color: $base-btn;
+}
+
+.nav-button--disadled {
+  background-color: #999999;
+}
