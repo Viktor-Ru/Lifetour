@@ -27,6 +27,10 @@
   }
 }
 
+.main-header__menu-togle--open {
+  background-image: url("/__spritemap#sprite-menu-close-view");
+}
+
 .main-header__logo {
   margin-bottom: 16px;
 }

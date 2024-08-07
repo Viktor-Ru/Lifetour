@@ -8,7 +8,8 @@
   padding: 0;
   margin: 0;
   min-width: 320px;
+}
 
-  background-color: tomato;
-  height: 1000px;
+.page-body--no-scrol {
+  overflow: hidden;
 }
