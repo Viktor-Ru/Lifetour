@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+  width: 142px;
+  height: 42px;
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    padding-left: 32px;
+  }
+}
