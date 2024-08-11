@@ -1,5 +1,6 @@
 import { togleMenu } from './menu.js'
-import { initHeroSlider } from './sliders.js'
+import { initHeroSlider, initToursSlider } from './sliders.js'
 
 togleMenu();
 initHeroSlider();
+initToursSlider();

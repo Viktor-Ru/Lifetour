@@ -1,11 +1,9 @@
 // Vendor
 // ---------------------------------
-
 @import "vendor/normalize";
 
 // Global
 // ---------------------------------
-
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/variables.scss";
@@ -15,9 +13,11 @@
 
 // Block
 // ---------------------------------
-
+@import "block/title.scss";
 @import "block/main-header.scss";
 @import "block/logo.scss";
 @import "block/main-nav.scss";
 @import "block/phone.scss";
 @import "block/hero.scss";
+@import "block/tours.scss";
+@import "block/tours-card.scss";

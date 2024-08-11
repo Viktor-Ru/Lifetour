@@ -20,33 +20,33 @@ function initHeroSlider() {
   });
 }
 
-// function initToursSlider() {
-//   const toursSwiper = new Swiper('.tours__swiper', {
-//     speed: 400,
-//     spaceBetween: 10,
-//     loop: false,
-//     autoHeight: true,
-//     slidesPerView: 1,
-//     modules: [Navigation],
+function initToursSlider() {
+  const toursSwiper = new Swiper('.tours__swiper', {
+    speed: 400,
+    spaceBetween: 10,
+    loop: false,
+    autoHeight: true,
+    slidesPerView: 1,
+    modules: [Navigation],
 
-//     navigation: {
-//       prevEl: '.tours__button-prev',
-//       nextEl: '.tours__button-next',
-//       disabledClass: 'nav-button--disadled',
-//     },
+    navigation: {
+      prevEl: '.tours__button--prev',
+      nextEl: '.tours__button--next',
+      disabledClass: 'nav-button--disadled',
+    },
 
-//     breakpoints: {
-//       768: {
-//         slidesPerView: 2,
-//         spaceBetween: 18,
-//       },
-//       1440: {
-//         slidesPerView: 3,
-//         spaceBetween: 30,
-//       }
-//     }
-//   });
-// }
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+  });
+}
 
 // function initTrainingSlider() {
 //   const trainingSwiper = new Swiper('.training__swiper', {
@@ -76,4 +76,4 @@ function initHeroSlider() {
 //   });
 // }
 
-export { initHeroSlider };
+export { initHeroSlider, initToursSlider };
