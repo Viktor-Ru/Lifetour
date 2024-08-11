@@ -6,6 +6,7 @@
   padding: 10px 20px 10px 20px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .tours-card--slide-1 {
@@ -240,7 +241,6 @@
 @media (min-width: $desktop-width) {
   .tours-card {
     width: 380px;
-    // padding: 10px 20px 10px 20px;
   }
 
   .tours-card--slide-1 {

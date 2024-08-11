@@ -17,6 +17,7 @@
   background-color: #0266c1;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 122px 15px 20px 15px;
 }
 
@@ -30,6 +31,20 @@
 
 .hero__slide--slide-3 {
   background-image: url("../img/hero-mobile-slide3.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__slide--slide-1 {
+    background-image: url("../img/hero-mobile-slide1@2x.jpg");
+  }
+
+  .hero__slide--slide-2 {
+    background-image: url("../img/hero-mobile-slide2@2x.jpg");
+  }
+
+  .hero__slide--slide-3 {
+    background-image: url("../img/hero-mobile-slide3@2x.jpg");
+  }
 }
 
 .hero__content {
@@ -150,6 +165,21 @@
     background-image: url("../img/hero-tablet-slide3.jpg");
   }
 
+  @media (min-resolution: 2dppx) {
+    .hero__slide--slide-1 {
+      background-image: url("../img/hero-tablet-slide1@2x.jpg");
+    }
+
+    .hero__slide--slide-2 {
+      background-image: url("../img/hero-tablet-slide2@2x.jpg");
+      padding-top: 120px;
+    }
+
+    .hero__slide--slide-3 {
+      background-image: url("../img/hero-tablet-slide3@2x.jpg");
+    }
+  }
+
   .hero__content {
     margin-bottom: 37px;
   }
@@ -197,6 +227,21 @@
 
   .hero__slide--slide-3 {
     background-image: url("../img/hero-desktop-slide3.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero__slide--slide-1 {
+      background-image: url("../img/hero-desktop-slide1@2x.jpg");
+    }
+
+    .hero__slide--slide-2 {
+      background-image: url("../img/hero-desktop-slide2@2x.jpg");
+      padding-top: 120px;
+    }
+
+    .hero__slide--slide-3 {
+      background-image: url("../img/hero-desktop-slide3@2x.jpg");
+    }
   }
 
   .hero__content {
