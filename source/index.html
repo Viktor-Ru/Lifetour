@@ -112,9 +112,9 @@
       </h2>
 
       <div class="tours__swiper swiper">
-        <div class="tours__pagination">
-          <button class="tours__button tours__button--prev"></button>
-          <button class="tours__button tours__button--next"></button>
+        <div class="pagination pagination--tours">
+          <button class="pagination__button pagination__button--tours-prev"></button>
+          <button class="pagination__button pagination__button--tours-next pagination__button--next"></button>
         </div>
 
         <ul class="tours__list swiper-wrapper">
@@ -226,6 +226,38 @@
       </div>
       <a class="tours__show-ll" href="#">Показать все туры</a>
     </section>
+
+    <section class="training container" data-test="training">
+      <h2 class="title">
+        <span class="title__shadow" aria-hidden="true">Обучение</span>
+        Обучение
+      </h2>
+
+      <p class="training__text">
+        Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
+        Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+      </p>
+
+      <h3 class="training__title">Наши инструкторы</h3>
+
+      <div class="training__swiper swiper">
+        <div class="pagination pagination--training">
+          <button class="pagination__button pagination__button--training-prev"></button>
+          <button class="pagination__button pagination__button--training-next pagination__button--next"></button>
+        </div>
+
+        <ul class="training__list swiper-wrapper">
+
+          <li class="training-card training-card--slide-1 swiper-slide">
+            <div class="training-card__wrapper">
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
   </main>
 
 
@@ -239,8 +271,8 @@
   <!--
     <div data-test="header">header</div>
     <div data-test="hero">hero</div>
-
     <div data-test="tours">tours</div>
+
     <div data-test="training">training</div>
     <div data-test="about">about</div>
     <div data-test="reviews">reviews</div>

@@ -30,9 +30,9 @@ function initToursSlider() {
     modules: [Navigation],
 
     navigation: {
-      prevEl: '.tours__button--prev',
-      nextEl: '.tours__button--next',
-      disabledClass: 'nav-button--disadled',
+      prevEl: '.pagination__button--tours-prev',
+      nextEl: '.pagination__button--tours-next',
+      disabledClass: 'pagination__button--disadled',
     },
 
     breakpoints: {
