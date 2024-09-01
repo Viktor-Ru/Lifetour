@@ -48,32 +48,35 @@ function initToursSlider() {
   });
 }
 
-// function initTrainingSlider() {
-//   const trainingSwiper = new Swiper('.training__swiper', {
-//     speed: 400,
-//     spaceBetween: 10,
-//     loop: false,
-//     autoHeight: true,
-//     slidesPerView: 1,
-//     modules: [Navigation],
+function initTrainingSlider() {
+  const trainingSwiper = new Swiper('.training__swiper', {
+    speed: 400,
+    spaceBetween: 10,
+    loop: false,
+    autoHeight: true,
+    slidesPerView: 1,
+    initialSlide: 2,
+    modules: [Navigation],
 
-//     navigation: {
-//       prevEl: '.training__button-prev',
-//       nextEl: '.training__button-next',
-//       disabledClass: 'nav-button--disadled',
-//     },
+    navigation: {
+      prevEl: '.pagination__button--training-prev',
+      nextEl: '.pagination__button--next',
+      disabledClass: 'pagination__button--disadled',
+    },
 
-//     breakpoints: {
-//       768: {
-//         slidesPerView: 3,
-//         spaceBetween: 20,
-//       },
-//       1440: {
-//         slidesPerView: 4,
-//         spaceBetween: 20,
-//       }
-//     }
-//   });
-// }
+    breakpoints: {
+      768: {
+        initialSlide: 0,
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1440: {
+        initialSlide: 0,
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    }
+  });
+}
 
-export { initHeroSlider, initToursSlider };
+export { initHeroSlider, initToursSlider, initTrainingSlider};

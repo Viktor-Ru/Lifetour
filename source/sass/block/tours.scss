@@ -44,7 +44,7 @@
     background-color: currentColor;
   }
 
-  &:focus:not(.tours__show-ll--disdled) {
+  &:focus-visible:not(.tours__show-ll--disdled) {
     color: #0266c1;
   }
 
@@ -92,13 +92,10 @@
 
   .tours__swiper {
     margin-top: -67px;
+    margin-bottom: 55px;
   }
 
   .pagination--tours {
     margin-bottom: 53px;
-  }
-
-  .tours__swiper {
-    margin-bottom: 55px;
   }
 }

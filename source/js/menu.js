@@ -6,7 +6,6 @@ const listElement = document.querySelector('.main-nav__list');
 const pageBodyElement = document.querySelector('.page-body');
 
 
-
 function togleMenu() {
 
   function MenuOpen() {
@@ -16,7 +15,7 @@ function togleMenu() {
 
     altBtnElement.innerHTML = 'закрыть меню.';
 
-    listElement.addEventListener('click', handleClickMenuItem)
+    listElement.addEventListener('click', handleClickMenuItem);
   }
 
   function MenuClose() {
@@ -26,28 +25,25 @@ function togleMenu() {
 
     altBtnElement.innerHTML = 'открыть меню.';
 
-    listElement.removeEventListener('click', handleClickMenuItem)
-  };
-
+    listElement.removeEventListener('click', handleClickMenuItem);
+  }
 
 
   function handleClickTogler() {
     if (menuElement.classList.contains('main-nav--close')) {
-      MenuOpen()
+      MenuOpen();
     } else {
-      MenuClose()
+      MenuClose();
     }
-  };
+  }
 
   function handleClickMenuItem(evt) {
     if (evt.target.classList.contains('main-nav__link')) {
-      MenuClose()
-    } else {
-      return
+      MenuClose();
     }
   }
 
   btnElement.addEventListener('click', handleClickTogler);
 }
 
-export { togleMenu }
+export { togleMenu };

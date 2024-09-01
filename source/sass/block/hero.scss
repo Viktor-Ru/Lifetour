@@ -18,32 +18,32 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 122px 15px 20px 15px;
+  padding: 122px 15px 20px;
 }
 
 .hero__slide--slide-1 {
-  background-image: url("../img/hero-mobile-slide1.jpg");
+  background-image: url("../img/background/hero-mobile-slide1.jpg");
 }
 
 .hero__slide--slide-2 {
-  background-image: url("../img/hero-mobile-slide2.jpg");
+  background-image: url("../img/background/hero-mobile-slide2.jpg");
 }
 
 .hero__slide--slide-3 {
-  background-image: url("../img/hero-mobile-slide3.jpg");
+  background-image: url("../img/background/hero-mobile-slide3.jpg");
 }
 
-@media (min-resolution: 2dppx) {
+@media (resolution >= 2dppx) {
   .hero__slide--slide-1 {
-    background-image: url("../img/hero-mobile-slide1@2x.jpg");
+    background-image: url("../img/background/hero-mobile-slide1@2x.jpg");
   }
 
   .hero__slide--slide-2 {
-    background-image: url("../img/hero-mobile-slide2@2x.jpg");
+    background-image: url("../img/background/hero-mobile-slide2@2x.jpg");
   }
 
   .hero__slide--slide-3 {
-    background-image: url("../img/hero-mobile-slide3@2x.jpg");
+    background-image: url("../img/background/hero-mobile-slide3@2x.jpg");
   }
 }
 
@@ -80,7 +80,7 @@
   line-height: 16px;
   font-weight: 500;
 
-  &:focus {
+  &:focus-visible {
     background-color: #ffffff;
     color: #1c3374;
     border: 1px solid #ffffff;
@@ -124,7 +124,7 @@
   border-radius: 50%;
 
 
-  &:focus {
+  &:focus-visible {
     outline: 1px solid rgba(255, 255, 255, 0.5);
   }
 
@@ -149,34 +149,34 @@
 
   .hero__slide {
     min-height: 1034px;
-    padding: 296px 45px 20px 45px;
+    padding: 296px 45px 20px;
   }
 
   .hero__slide--slide-1 {
-    background-image: url("../img/hero-tablet-slide1.jpg");
+    background-image: url("../img/background/hero-tablet-slide1.jpg");
   }
 
   .hero__slide--slide-2 {
-    background-image: url("../img/hero-tablet-slide2.jpg");
+    background-image: url("../img/background/hero-tablet-slide2.jpg");
     padding-top: 120px;
   }
 
   .hero__slide--slide-3 {
-    background-image: url("../img/hero-tablet-slide3.jpg");
+    background-image: url("../img/background/hero-tablet-slide3.jpg");
   }
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     .hero__slide--slide-1 {
-      background-image: url("../img/hero-tablet-slide1@2x.jpg");
+      background-image: url("../img/background/hero-tablet-slide1@2x.jpg");
     }
 
     .hero__slide--slide-2 {
-      background-image: url("../img/hero-tablet-slide2@2x.jpg");
+      background-image: url("../img/background/hero-tablet-slide2@2x.jpg");
       padding-top: 120px;
     }
 
     .hero__slide--slide-3 {
-      background-image: url("../img/hero-tablet-slide3@2x.jpg");
+      background-image: url("../img/background/hero-tablet-slide3@2x.jpg");
     }
   }
 
@@ -213,34 +213,34 @@
 
   .hero__slide {
     min-height: 800px;
-    padding: 136px 120px 20px 120px;
+    padding: 136px 120px 20px;
   }
 
   .hero__slide--slide-1 {
-    background-image: url("../img/hero-desktop-slide1.jpg");
+    background-image: url("../img/background/hero-desktop-slide1.jpg");
   }
 
   .hero__slide--slide-2 {
-    background-image: url("../img/hero-desktop-slide2.jpg");
+    background-image: url("../img/background/hero-desktop-slide2.jpg");
     padding-top: 120px;
   }
 
   .hero__slide--slide-3 {
-    background-image: url("../img/hero-desktop-slide3.jpg");
+    background-image: url("../img/background/hero-desktop-slide3.jpg");
   }
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     .hero__slide--slide-1 {
-      background-image: url("../img/hero-desktop-slide1@2x.jpg");
+      background-image: url("../img/background/hero-desktop-slide1@2x.jpg");
     }
 
     .hero__slide--slide-2 {
-      background-image: url("../img/hero-desktop-slide2@2x.jpg");
+      background-image: url("../img/background/hero-desktop-slide2@2x.jpg");
       padding-top: 120px;
     }
 
     .hero__slide--slide-3 {
-      background-image: url("../img/hero-desktop-slide3@2x.jpg");
+      background-image: url("../img/background/hero-desktop-slide3@2x.jpg");
     }
   }
 
@@ -257,7 +257,7 @@
   }
 
   .hero__content p {
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
     width: 465px;
   }
 
@@ -266,7 +266,6 @@
   }
 
   .hero__slide-list {
-    display: block;
     margin: 0;
     padding: 0;
     list-style: none;

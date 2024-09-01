@@ -7,7 +7,7 @@
   line-height: 14px;
   font-weight: 600;
 
-  &:focus:not(.phone--disdled) {
+  &:focus-visible:not(.phone--disdled) {
     color: #2d383f;
   }
 

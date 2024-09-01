@@ -1,0 +1,16 @@
+.training-card {
+  box-sizing: border-box;
+  display: block;
+  width: 260px;
+  min-height: 356px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  padding: 14px;
+}
+
+.training-card__img {
+  display: block;
+  width: 260px;
+  height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+}

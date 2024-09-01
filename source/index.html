@@ -64,7 +64,7 @@
                 горы Чегет.
               </p>
             </div>
-            <button class="hero__btn">Смотреть тур</button>
+            <button class="hero__btn" type="button">Смотреть тур</button>
             <ul class="hero__slide-list">
               <li class="hero__slide-item hero__slide-item--duration">6 дней/5 ночей</li>
               <li class="hero__slide-item hero__slide-item--level">Высокая сложность</li>
@@ -79,7 +79,7 @@
                 уголков дикой природы в мире.
               </p>
             </div>
-            <button class="hero__btn">Смотреть тур</button>
+            <button class="hero__btn" type="button">Смотреть тур</button>
             <ul class="hero__slide-list">
               <li class="hero__slide-item hero__slide-item--duration">9 дней/10 ночей</li>
               <li class="hero__slide-item hero__slide-item--level">Средняя сложность</li>
@@ -94,7 +94,7 @@
                 дух ландшафтов Алтайских гор.
               </p>
             </div>
-            <button class="hero__btn">Смотреть тур</button>
+            <button class="hero__btn" type="button">Смотреть тур</button>
             <ul class="hero__slide-list">
               <li class="hero__slide-item hero__slide-item--duration">8 дней/7 ночей</li>
               <li class="hero__slide-item hero__slide-item--level">Лёгкая сложность</li>
@@ -113,8 +113,12 @@
 
       <div class="tours__swiper swiper">
         <div class="pagination pagination--tours">
-          <button class="pagination__button pagination__button--tours-prev"></button>
-          <button class="pagination__button pagination__button--tours-next pagination__button--next"></button>
+          <button class="pagination__button pagination__button--tours-prev" type="button">
+            <span class="visually-hidden">предыдущий слайд.</span>
+          </button>
+          <button class="pagination__button pagination__button--tours-next pagination__button--next" type="button">
+            <span class="visually-hidden">следующий слайд.</span>
+          </button>
         </div>
 
         <ul class="tours__list swiper-wrapper">
@@ -233,54 +237,130 @@
         Обучение
       </h2>
 
-      <p class="training__text">
-        Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
-        Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
-      </p>
+      <div class="training__content">
+        <p>
+          Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
+          Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+        </p>
+      </div>
 
-      <h3 class="training__title">Наши инструкторы</h3>
+      <h3 class="training__title-instructors">Наши инструкторы</h3>
 
       <div class="training__swiper swiper">
         <div class="pagination pagination--training">
-          <button class="pagination__button pagination__button--training-prev"></button>
-          <button class="pagination__button pagination__button--training-next pagination__button--next"></button>
+          <button class="pagination__button pagination__button--training-prev" type="button">
+            <span class="visually-hidden">предыдущий слайд.</span>
+          </button>
+          <button class="pagination__button pagination__button--training-next pagination__button--next" type="button">
+            <span class="visually-hidden">следующий слайд.</span>
+          </button>
         </div>
 
-        <ul class="training__list swiper-wrapper">
+        <ul class="training__slider swiper-wrapper">
+          <li class="training-card swiper-slide">
 
-          <li class="training-card training-card--slide-1 swiper-slide">
-            <div class="training-card__wrapper">
+            <picture>
+              <source type="image/webp" width="260" height="200"
+                srcset="img/training-card1-desktop.webp 1x, img/training-card1-desktop@2x.webp 2x">
 
+              <img class="training-card__img" src="img/training-card1-desktop.jpg" alt="Александр Прокофьев."
+                width="260" height="200" srcset="img/training-card1-desktop@2x.jpg 2x">
+            </picture>
+
+            <div class="training-card__content">
+              <div>
+                <h4>Александр Прокофьев</h4>
+                <button type="button"><span>VK.</span></button>
+              </div>
+              <p>
+                Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.
+              </p>
             </div>
           </li>
 
+          <li class="training-card swiper-slide">
+            <picture>
+              <source type="image/webp" width="260" height="200"
+                srcset="img/training-card2-desktop.webp 1x, img/training-card2-desktop@2x.webp 2x">
+
+              <img class="training-card__img" src="img/training-card2-desktop.jpg" alt="Светлана Афиногенова."
+                width="260" height="200" srcset="img/training-card2-desktop@2x.jpg 2x">
+            </picture>
+            <div class="training-card__content">
+              <div>
+                <h4>Светлана Афиногенова</h4>
+                <button type="button"><span>VK.</span></button>
+              </div>
+              <p>
+                Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом
+                назначение жизни.
+              </p>
+            </div>
+          </li>
+
+          <li class="training-card swiper-slide">
+            <picture>
+              <source type="image/webp" width="260" height="200"
+                srcset="img/training-card3-desktop.webp 1x, img/training-card3-desktop@2x.webp 2x">
+
+              <img class="training-card__img" src="img/training-card3-desktop.jpg" alt="Надежда Колесниченко."
+                width="260" height="200" srcset="img/training-card3-desktop@2x.jpg 2x">
+            </picture>
+            <div class="training-card__content">
+              <div>
+                <h4>Надежда Колесниченко</h4>
+                <button type="button"><span>VK.</span></button>
+              </div>
+              <p>
+                Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
+                спокойно и уверенно.
+              </p>
+            </div>
+          </li>
+
+          <li class="training-card swiper-slide">
+            <picture>
+              <source type="image/webp" width="260" height="200"
+                srcset="img/training-card4-desktop.webp 1x, img/training-card4-desktop@2x.webp 2x">
+
+              <img class="training-card__img" src="img/training-card4-desktop.jpg" alt="Федор Кайгородов." width="260"
+                height="200" srcset="img/training-card4-desktop@2x.jpg 2x">
+            </picture>
+            <div class="training-card__content">
+              <div>
+                <h4>Федор Кайгородов</h4>
+                <button type="button"><span>VK.</span></button>
+              </div>
+              <p>
+                Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                путешествует по Европе.
+              </p>
+            </div>
+          </li>
+
+          <li class="training-card swiper-slide">
+            <picture>
+              <source type="image/webp" width="260" height="200"
+                srcset="img/training-card5-desktop.webp 1x, img/training-card5-desktop@2x.webp 2x">
+
+              <img class="training-card__img" src="img/training-card5-desktop.jpg" alt="Даниэль Васнецов." width="260"
+                height="200" srcset="img/training-card5-desktop@2x.jpg 2x">
+            </picture>
+            <div class="training-card__content">
+              <div>
+                <h4>Даниэль Васнецов</h4>
+                <button type="button"><span>VK.</span></button>
+              </div>
+              <p>
+                Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
 
     </section>
   </main>
-
-
-
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт"> -view
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
-  <!--
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-  -->
 
   <script type="module" src="js/main.js"></script>
 </body>

@@ -5,7 +5,6 @@
 
 @media (min-width: $tablet-width) {
   .pagination {
-    display: block;
     width: 78px;
     margin-left: auto;
     display: flex;
@@ -35,12 +34,12 @@
       background-color: #ffffff;
     }
 
-    &:focus:not(.pagination__button--disadled) {
+    &:focus-visible:not(.pagination__button--disadled) {
       background-color: #ffffff;
       border: 1px solid #ffffff;
     }
 
-    &:focus:not(.pagination__button--disadled)::before {
+    &:focus-visible:not(.pagination__button--disadled)::before {
       background-color: #1c3374;
     }
 
@@ -59,7 +58,7 @@
     }
 
     &:active:not(.pagination__button--disadled)::before {
-      background-color: #ffffff
+      background-color: #ffffff;
     }
   }
 
